@@ -1,0 +1,45 @@
+EN,HR
+en,hr
+warm,topao
+strong,jak
+short,nizak
+dark,taman
+bright,svijetao
+full (not hungry),sit
+alive,živ
+dead,mrtav
+healthy,zdrav
+ill,bolestan/nezdrav
+fast,brz
+evil/bad,zao/loš
+eager,marljiv
+faithful,vjeran
+unfaithful,nevjeran
+honest,iskren
+dishonest,neiskren
+fair,pošten
+unfair,nepošten
+not nice,antipatičan
+generous,darežljiv
+stingy/selfish,škrt
+talkative,brbljav
+tacit (schweigsam),šutljiv
+sober,trijezan
+drunk,pijan
+gentle,nježan
+harsh,grub
+sneaky/smart/tricky/feisty,lukav
+naive,naivan
+fearful/shy,plašljiv
+polite/kind,ljubazan/pristojan
+impolite,neljubazan
+hard/heavy/difficult,težak
+easy/light (weight),lagan
+full,pun
+empty,prazan
+hot,vruć
+freezing,leden
+hard,tvrd
+soft,mek(an)
+sweet/cute,sladak
+sour,kiseo

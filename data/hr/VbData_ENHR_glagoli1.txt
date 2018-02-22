@@ -1,0 +1,10 @@
+Infinitive,infinitiv,ja,ti,on/ona/ono,mi,vi,oni/one/ona, ja sam (prošlo vrijeme)
+en,hr,hr,hr,hr,hr,hr,hr,hr
+to have,imati,imam,imaš,ima,imamo,imate,imaju,imao
+to know,znati,znam,znaš,zna,znamo,znate,znaju,znao
+to read,čitati,čitam,čitaš,čita,čitamo,čitate,čitaju,čitao
+to listen,slušati,slušam,slušaš,sluša,slušamo,slušate,slušaju,slušao
+to kiss,ljubiti,ljubim,ljubiš,ljubi,ljubimo,ljubite,ljube,ljubio
+to learn,učiti,učim,učiš,uči,učimo,učite,uče,učio
+to speak,govoriti,govorim,govoriš,govori,govorimo,govorite,govore,govorio
+to think,misliti,mislim,misliš,misli,mislimo,mislite,misle,mislio

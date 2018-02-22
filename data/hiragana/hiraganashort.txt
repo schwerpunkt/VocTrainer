@@ -1,0 +1,7 @@
+-Hiragana,Romaji
+hiragana,romaji
+あ,a
+い,i
+う,u
+え,e
+お,o

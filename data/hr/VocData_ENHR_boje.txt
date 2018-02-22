@@ -1,0 +1,17 @@
+EN,HR
+en,hr
+brown,smeđa
+red,crvena
+blue,plava
+black,crna
+yellow,žuta
+purple,ljubičasta/purpurna
+pink,ružičasta (roza)
+white,bijela
+gray,siva
+green,zelena
+color,boja
+orange (color),narančasta
+gold,zlatan/zlato
+silver,srebrna
+cyan,cijan

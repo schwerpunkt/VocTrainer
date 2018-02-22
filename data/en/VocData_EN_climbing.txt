@@ -1,0 +1,6 @@
+-ENdesc,EN
+en,en
+The process by which a climber can descend a fixed rope.,Abseil
+A medical condition that is often observed at high altitudes. Also known as Acute mountain sickness (AMS).,Altitude sickness
+To climb a rope using aid device.,Ascend
+rock formation/artificial climbing wall with a slope of more than 90°,overhang

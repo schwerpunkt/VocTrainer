@@ -1,0 +1,11 @@
+Infinitiv,infinitif,je/j',tu,il/elle/on,nous,vous,ils/elles,je/j' (passé composé)
+de,fr,fr,fr,fr,fr,fr,fr,fr
+haben,avoir,ai,as,a,avons,avez,ont,ai eu
+weggehen/-fahren,partir,pars,pars,part,partons,partez,partent,suis parti(e)
+trinken,boire,bois,bois,boit,buvons,buvez,boivent,ai bu
+machen,faire,fais,fais,fait,faisons,faites,font,ai fait
+beenden,finir,finis,finis,finit,finissons,finissez,finissent,ai fini
+betrachten,regarder,regarde,regardes,regarde,regardons,regardez,regardent,ai regardé
+zuhören,écouter,écoute,écoutes,écoute,écoutons,écoutez,écoutent,ai écouté
+sein,être,suis,es,est,sommes,êtes,sont,ai été
+essen,manger,mange,manges,mange,mangeons,mangez,mangent,ai mangé

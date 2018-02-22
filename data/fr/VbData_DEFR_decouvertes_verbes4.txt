@@ -1,0 +1,11 @@
+Infinitiv,infinitif,je/j',tu,il/elle/on,nous,vous,ils/elles,je/j' (passé composé)
+de,fr,fr,fr,fr,fr,fr,fr,fr
+sehen,voir,vois,vois,voit,voyons,voyez,voient,ai vu
+sich bewegen,bouger,bouge,bouges,bouge,bougeons,bougez,bougent,ai bougé
+schlafen,dormir,dors,dors,dort,dormons,dormez,dorment,ai dormi
+sagen,dire,dis,dis,dit,disons,dites,disent,ai dit
+kommen,venir,viens,viens,vient,venons,venez,viennent,suis venu(e)
+wollen,vouloir,veux,veux,veut,voulons,voulez,veulent,ai voulu
+kaufen,acheter,achète,achètes,achète,achetons,achetez,achètent,ai acheté
+antworten,répondre,réponds,réponds,répond,répondons,répondez,répondent,ai répondu
+können,pouvoir,peux,peux,peut,pouvons,pouvez,peuvent,ai pu

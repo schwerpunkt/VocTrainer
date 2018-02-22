@@ -1,0 +1,18 @@
+EN,IT
+en,it
+black,nero
+white,bianco
+red,rosso
+yellow,giallo
+light blue,azzurro
+blue,blu(e)
+green,verde
+brown,marrone
+pink,rosa
+orange,arancia
+gray,grigio
+purple,viola/porpora
+color,colore
+gold,dorato
+silver,argento
+cyan,ciano

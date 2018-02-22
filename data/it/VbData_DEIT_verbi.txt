@@ -1,0 +1,4 @@
+Infinitiv,infinito,io,tu,lui/lei,noi,voi,loro,io (passato prossimo)
+de,it,it,it,it,it,it,it
+gehen,andare,vado,vai,va,andiamo,andate,vanno,sono andato
+sein,essere,sono,sei,è,siamo,siete,sono,sono stato(-a)

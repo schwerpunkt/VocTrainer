@@ -1,0 +1,46 @@
+EN,HR
+en,hr
+excellent,odličan/izvrstan
+very good,jako dobro
+so-so,tako-tako
+bad,loše
+married (male),oženjen
+married (female),udana
+old,star
+young,mlad
+new,nov
+beautiful,lijep
+big,velik
+small,malen
+tall/high,visok
+slow,spor
+expensive,skup
+cheap,jeftin
+clean,čist
+dirty,prljav
+skinny,mršav
+stupid,glup
+interesting,zanimljiv
+open,otvoren
+closed,zatvoren
+funny (person),duhovit
+ugly,ružan
+good,dobar
+nice,simpatičan
+short (distance),kratak
+funny (e.g. movie),smiješan
+tired,umoran
+hungry,gladan
+smart,pametan
+intelligent,inteligentan
+boring,dosadan
+brave,hrabar
+happy,sretan
+sad,tužan
+poor,siromašan
+handsome (both genders),zgodan
+positive,pozitivan
+negative,negativan
+fat,debeo
+cheerful,veseo
+mature/ripe (reif obst),zreo

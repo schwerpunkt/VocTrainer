@@ -1,0 +1,9 @@
+LABEL1,LABEL2,-LABEL3,LABEL4
+label1type,label2type,label3type,label4type
+data,data,data,data
+data,data,data,data
+data,data,data,data
+...
+// in this example label 3 is asked by default because of the "-" in front of it.
+// there is no select box because it contains more than 2 labels
+// with only 2 labels there is a checkbox and "Ask any" is default if there is no "-" in front of a label

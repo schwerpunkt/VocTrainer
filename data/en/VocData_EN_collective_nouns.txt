@@ -1,0 +1,20 @@
+EN,EN
+en,en
+(group of) boars,sounder
+(group of) ants,army
+(group of) butterflies,kaleidoscope
+(group of) crows,murder
+(group of) mice,mischief
+(group of) kittens,kindle
+(group of) birds,flock
+(group of) porcupines,prickle
+(group of) bees,swarm/hive
+(group of) dogs,pack
+(group of) gerbel,horde
+(group of) hounds,cry
+(group of) geese (in flight),skein
+(group of) geese (in 'V'-flight),wedge
+(group of) pigs,litter
+(group of) puppies,litter
+(group of) wild cats,destruction
+(group of) wolves,route

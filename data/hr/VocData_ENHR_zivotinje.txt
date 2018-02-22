@@ -1,0 +1,56 @@
+EN,HR
+en,hr
+cat,mačka
+parrot,papiga
+frog,žaba
+mouse,miš
+lion,lav
+horse,konj
+sheep,ovca
+horses,konji
+giraffe,žirafa
+fish,riba
+dog,pas
+bird,ptica
+cow,krava
+pig (swine),svinja
+monkey,majmun
+lynx,ris
+marten (Marder),kuna
+bear,medvjed
+snake,zmija
+bull,bik
+chicken,kokoš/pile
+chick,pilić
+fly,muha
+shark,morski pas
+spider,pauk
+dogs,psi
+hamster,hrčak
+whale,kit
+pet,(kućni) ljubimac
+rabbit,zec
+butterfly,leptir
+zoo,zoološki vrt
+wild animals,divlje životinje
+leopard,leopard
+zebra,zebra
+elephant,slon
+domestic animals,domaće životinje
+goose,guska
+duck,patka
+donkey,magarac
+turtle,kornjača
+snail,puž
+fox,lisica
+owl,sova
+ant,mrav
+wolf,vuk
+skunk (animal),tvor
+deer,srna
+rat,štakov
+turkey,pura
+calf (young cow),tele
+lamb,janje
+bone,kost
+crab (cancer),rak

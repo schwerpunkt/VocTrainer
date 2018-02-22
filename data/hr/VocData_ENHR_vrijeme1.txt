@@ -1,0 +1,36 @@
+EN,HR
+en,hr
+not always,ne uvijek
+always,uvijek
+often,često
+rarely,rijetko
+never,nikad
+(in the) morning,ujutro
+afternoon,poslijepodne (popodne)
+now,sada
+immediately/now,odmah
+during,tijekom
+every day,svaki dan
+sometimes,ponekad
+usually,obično
+all day,cijeli dan
+all weekend,cijeli vikend
+yesterday,jučer
+this morning,jutros
+last night,sinoć
+afterwards,onda
+next,slijedeći
+once,jedanput
+monthly,mjesečno
+before,prije
+after,poslije/nakon
+today,danas
+daily,dnevni
+season,godišnja doba
+week,tjedan
+month,mjesec
+previous,prethodan
+evening,večer
+tomorrow,sutra
+noon,podne
+tonight,večeras

@@ -1,0 +1,46 @@
+EN,HR
+en,hr
+flat (taste),blag
+spicy/angry,ljut
+salty,slan
+unsalted,neslan
+dry,suh
+wet,mokar
+deep,dubok
+shallow,plitak
+long,dug(ačak)
+natural,prirodan
+artificial,umjetan
+tasty,ukusan
+tasteless,neukusan
+greasy,masan
+not greasy,nemasan
+clear,bistar
+turbid (trüb),mutan
+up,gore
+down,dolje
+far away,daleko
+true/correct,točno
+false,netočno
+wide,širok
+narrow,uzak
+cozy/pleasant,ugodan
+reliable,pouzdan
+cheap (not generous),štedljiv
+wasteful,rastrošan
+a lot,puno
+a few,malo
+favorite,omiljen/najdraže
+wise,mudar
+stubborn,tvrdoglav
+free,slobodan
+stinky/smelly,smrdljiv
+more/longer,više
+important,bitan/važan
+artistic,umjetničk
+different,različite
+curious,znatiželjan
+famous,poznat
+pedantic (being a perfectionist),pedantan
+far/remote,dalek
+crazy,lud

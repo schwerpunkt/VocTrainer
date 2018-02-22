@@ -1,0 +1,11 @@
+Infinitiv,infinitif,je/j',tu,il/elle/on,nous,vous,ils/elles,je/j' (passé composé)
+de,fr,fr,fr,fr,fr,fr,fr,fr
+schreiben,écrire,écris,écris,écrit,écrivons,écrivez,écrivent,ai écrit
+nehmen,prendre,prends,prends,prend,prenons,prenez,prennent,ai pris
+wissen,savoir,sais,sais,sait,savons,savez,savent,ai su
+lieben,aimer,aime,aimes,aime,aimons,aimez,aiment,ai aimé
+bezahlen,payer,paie,paies,paie,payons,payez,paient,ai payé
+warten,attendre,attends,attends,attend,attendons,attendez,attendent,ai attendu
+gehen,aller,vais,vas,va,allons,allez,vont,suis allé(e)
+setzen/legen/stellen,mettre,mets,mets,met,mettons,mettez,mettent,ai mis
+lernen,apprendre,apprends,apprends,apprend,apprenons,apprenez,apprennent,ai appris

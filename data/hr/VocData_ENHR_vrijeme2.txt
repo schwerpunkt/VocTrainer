@@ -1,0 +1,32 @@
+EN,HR
+en,hr
+to fall,padati
+to blow,puhati
+very,jako/veoma/vrlo
+morning,jutarnja
+cloud,oblak
+sun,sunce
+rain,kiša
+weather forecast,vremenska prognoza
+wind,vjetar
+snow,snijeg
+temperature,temperatura
+degrees Celsius,stupnjeva Celzija
+fog,magla
+drench (strong rain),pljusak
+lightning,munja
+thunder,grom
+snowflake,pahulja
+snowflakes,pahuljica
+drop (raindrop),kap
+drops (raindrops),kapljica
+dew,rosa
+ice,poledica
+weak,slab
+cold,hladan
+cloudy,oblačan
+sunny,sunčan
+Today a wind blows.,Danas puše vjetar.
+clear sky,nebo je vedro
+It was warm.,Toplo je bilo.
+There is no snow,Nije snijeg.

@@ -1,0 +1,33 @@
+EN,HR
+en,hr
+confused,zbunjen
+normal,normalan
+low-grade,nekvalitetan
+dangerous,opasan
+complicated,kompliciran
+tasty,ukusan
+strong,snažan
+easy,jednostavan
+rude,nepristojan
+a few/several/some,nekoliko
+lazy,lijen
+calm,miran
+silent,tih
+strict,strog
+serious,ozbiljan
+ambitious,ambiciozan
+neat,uredan
+responsible,odgovoran
+too hot,prevruć
+too salty,preslan
+special,poseban
+properly,pristojno
+less,manje
+more,još
+too little,premalo
+too much,previše
+enough,dovoljno
+not enough,nedovoljno
+mature/adult,punoljetan
+comfortable,udoban
+rich,bogat

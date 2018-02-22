@@ -1,0 +1,38 @@
+EN,HR
+en,hr
+cap,kapa
+shoes,cipele
+dress,haljina
+tie,kravata
+hat,šešir
+scarf,šal
+jacket,jakna
+bag,torba
+T-shirt,majica
+shirt (sport),dres
+coat,kaput
+sweater,džemper/pulover
+clothing/clothes,odjeća
+footwear,obuća
+cap,kapa
+glasses,naočale
+sunglasses/shades,sunčane naočale
+pants,hlače
+skirt,suknja
+pyjama,pidžama
+suit,odijelo
+shirt,košulja
+underpants,gaće
+bra,grudnjak
+costume,kostim
+boxershorts,bokserice
+suit jacket,sako
+handkerchief,marama
+belt,remen
+tights,najlonke
+sneakers,tenisice
+boots,čizme
+socks,čarape
+undershirt,potkošulja
+sleeve,rukav
+gloves,rukavice

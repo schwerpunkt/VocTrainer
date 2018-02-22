@@ -1,0 +1,16 @@
+-Attacker,Counter
+en,en
+skirmisher,hussar/onager/paladin
+halbedier,archer/gunpowder/onager/scorpions/paladin
+hussar,onager/halbedier/paladin
+cataphracts,halbedier/camel
+archer,skirmisher
+infantry,archer/gunpowder/scorpions/paladin
+cavalry archer,skirmisher/halbedier/camel
+gunpowder,skirmisher/hussar/archer
+camel,halbedier/archer
+paladin,halbedier/camel
+buildings,ram,bombard cannon,onager,trebuchet
+siege,ram/bombard cannon/hussars
+cavalry,skirmisher/halbedier/camel
+bombard cannon,skirmisher/hussar

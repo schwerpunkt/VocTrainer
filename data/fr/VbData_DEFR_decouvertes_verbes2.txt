@@ -1,0 +1,11 @@
+Infinitiv,infinitif,je/j',tu,il/elle/on,nous,vous,ils/elles,je/j' (passé composé)
+de,fr,fr,fr,fr,fr,fr,fr,fr
+anfangen,commencer,commence,commences,commence,commençons,commencez,commencent,ai commencé
+ausgehen,sortir,sors,sors,sort,sortons,sortez,sortent,suis sorti(e)
+lesen,lire,lis,lis,lit,lisons,lisez,lisent,ai lu
+wechseln/umsteigen,changer,change,changes,change,changeons,changez,changent,ai changé
+hören,entendre,entends,entends,entend,entendons,entendez,entendent,ai entendu
+öffnen,ouvrir,ouvre,ouvres,ouvre,ouvrons,ouvrez,ouvrent,ai ouvert
+verstehen,comprendre,comprends,comprends,comprend,comprenons,comprenez,comprennent,ai compris
+anbieten,offrir,offre,offres,offre,offrons,offrez,offrent,ai offert
+verkaufen,vendre,vends,vends,vend,vendons,vendez,vendent,ai vendu
