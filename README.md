@@ -4,6 +4,8 @@ VocTrainer is a client side web based training software to train arbitrary data 
 
 Questions can be answered by clicking on random suggestions including the correct answer or by self-honestly ignoring them and simply type them in the textbox.
 
+![screenshot from 2018-02-22 18-55-39](https://user-images.githubusercontent.com/2730611/36555380-1bb76514-1802-11e8-8a96-2f83ef3defa1.png)
+
 ## Data Structure
 
 Data can be added via .txt files complying the following format:
