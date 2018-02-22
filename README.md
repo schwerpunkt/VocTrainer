@@ -1,2 +1,3 @@
 # VocTrainer
-Repo for the VocTrainer project, which will be transferred to github from philippharb.at/voctrainer.
+
+VocTrainer is a client side web based training software to train arbitrary data in column format.
