@@ -8,16 +8,18 @@ Questions can be answered by clicking on random suggestions including the correc
 
 Data can be added via .txt files complying the following format:
 
+```
 LABEL1,LABEL2,-LABEL3,LABEL4...
 label1type,label2type,label3type,label4type...
 data,data,data,data...
 data,data,data,data...
 data,data,data,data...
 ...
+```
 
-LABEL# ... can be arbitrary title information
-label#type ... used as identifier. should be ascii. certain label#type specific behavior is currently hardcoded (to e.g. implement tailord needs of certain alphabets/languages). this integration will become more modular
-data ... data that is 'asked' and 'answered'. special cases are implemented such that e.g. information in (brackets) doesn't have to be written in the textfield to be correct (as well as the above mentioned label#type specific cases)
+* LABEL# ... can be arbitrary title information
+* label#type ... used as identifier. should be ascii. certain label#type specific behavior is currently hardcoded (to e.g. * implement tailord needs of certain alphabets/languages). this integration will become more modular
+* data ... data that is 'asked' and 'answered'. special cases are implemented such that e.g. information in (brackets) doesn't have to be written in the textfield to be correct (as well as the above mentioned label#type specific cases)
 
 Data files must have two or more columns and must start with the LABEL# and lable#type line.
 
