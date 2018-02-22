@@ -237,7 +237,7 @@ var vocTrainer = {
       });
     }
 
-    $("#askedline").html(this.Labels[questionlabel]+" "+this.Question);
+    $("#askedline").html("<small>"+this.Labels[questionlabel]+"</small> "+this.Question);
   },
   answerViaOption : function(optionnr){
     if(this.Answered > 0 && !$("#answeroptions a").eq(optionnr).hasClass("alert-danger")){
