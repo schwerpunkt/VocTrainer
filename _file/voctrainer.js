@@ -233,7 +233,7 @@ var vocTrainer = {
         if(options[option] == vocTrainer.Answer){
           vocTrainer.AnswerOption = option;
         }
-        $("#answeroptions").append('<a href="javascript:vocTrainer.answerViaOption('+option+')" class="list-group-item">'+options[option]+'</a>')
+        $("#answeroptions").append('<a href="javascript:vocTrainer.answerViaOption('+option+')" class="list-group-item">'+options[option]+' <small>[ '+(option+1)+' ]</small></a>');
       });
     }
 
