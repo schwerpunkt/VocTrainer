@@ -116,9 +116,9 @@
 
       <!-- Next/Don't know buttons -->
       <p>
-        <button type="button" onclick="javascript:vocTrainer.knowThat();" class="btn btn-lg btn-success">I know that</button>
+        <button type="button" onclick="javascript:vocTrainer.dontKnow();" class="btn btn-lg btn-default">I don't know</button>
         <button type="button" onclick="javascript:vocTrainer.ask();" class="btn btn-lg btn-default">Next question</button>
-        <button type="button" onclick="javascript:vocTrainer.dontKnow();" class="btn btn-lg btn-danger">I don't know</button>
+        <button type="button" onclick="javascript:vocTrainer.knowThat();" class="btn btn-sm btn-default">Never ask again</button>
       </p>
 
       <!-- columnswitcher -->
@@ -130,7 +130,9 @@
 
       <div class="page-header">
         <p>
-          Info: TODO ESC, Return, 1, 2, 3, 4
+          Shortcuts:<br>
+          <small>[esc]</small>: I don't know<br>
+          <small>[space]</small>: Next question
         </p>
         <p>
           Found a mistake? Please report it with <span class="badge">subject: <span id="errorreportfile">file</span>_<span id="errorreport">#</span></span>. Thank you!
