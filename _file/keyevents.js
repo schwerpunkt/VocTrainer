@@ -6,6 +6,10 @@ $(document).keyup(function(e){
   }
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 $(document).keydown(function(e){
     // document.title = e.keyCode;
 
