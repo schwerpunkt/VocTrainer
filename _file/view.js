@@ -139,3 +139,7 @@ var view = {
   }
 }
 view.selectTrainer();
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

@@ -22,7 +22,7 @@
 </head>
 <body role="document">
       <!-- Navbar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,7 +36,9 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li id="navtrainertitle">trainertitle</li>
-              <!--<li><a href="index.html?about">About</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html?about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -116,8 +118,8 @@
 
       <!-- Next/Don't know buttons -->
       <p>
-        <button type="button" onclick="javascript:vocTrainer.dontKnow();" class="btn btn-lg btn-default">I don't know</button>
-        <button type="button" onclick="javascript:vocTrainer.ask();" class="btn btn-lg btn-default">Next question</button>
+        <button type="button" onclick="javascript:vocTrainer.dontKnow();" class="btn btn-lg btn-default" data-toggle="tooltip" data-placement="top" title="Shortcut: [ esc ]">I don't know</button>
+        <button type="button" onclick="javascript:vocTrainer.ask();" class="btn btn-lg btn-default" data-toggle="tooltip" data-placement="top" title="Shortcut: [ return ]">Next question</button>
         <button type="button" onclick="javascript:vocTrainer.knowThat();" class="btn btn-sm btn-default">Never ask again</button>
       </p>
 
@@ -129,11 +131,6 @@
       </div>
 
       <div class="page-header">
-        <p>
-          Shortcuts:<br>
-          <small>[esc]</small>: I don't know<br>
-          <small>[space]</small>: Next question
-        </p>
         <p>
           Found a mistake? Please report it with <span class="badge">subject: <span id="errorreportfile">file</span>_<span id="errorreport">#</span></span>. Thank you!
         </p>
@@ -153,11 +150,7 @@
 
     <!-- About -->
     <div id="about" class="vocUIelement container theme-showcase" role="main">
-      Todo
-    </div>
-
-    <div class="container theme-showcase">
-        <a href="https://philippharb.at" target="_blank">philippharb.at</a>
+      <a href="https://github.com/schwerpunkt/VocTrainer">See on GitHub</a>
     </div>
 
 
