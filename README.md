@@ -8,7 +8,8 @@ Questions can be answered by clicking on random suggestions including the correc
 
 ## Demo Servers
 
-[server1](https://www.philippharb.at/VocTrainer)
+- [server1](https://www.philippharb.at/VocTrainer)
+- [Github Pages (master branch)](https://schwerpunkt.github.io/VocTrainer)
 
 ## Data Structure
 
