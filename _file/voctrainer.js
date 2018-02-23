@@ -28,14 +28,14 @@ var vocTrainer = {
   ChartPieces : "array",
   start : function(file){
     view.switchUI("voctrainer");
-    this.loadData(file);
+    vocTrainer.loadData(file);
   },
   fail : function(msg){
     alert(msg);
     view.switchUI("trainerselector");
   },
   loadData : function(trainer){
-    this.File = trainer;
+    vocTrainer.File = trainer;
     $("#errorreportfile").html(trainer);
     // read csv file
     $.ajax({
@@ -54,13 +54,13 @@ var vocTrainer = {
       }
     });
     // initialize stages
-    for(i = 0;i < this.MaxStage;i++){
-      this.Stages[i] = new Array();
+    for(i = 0;i < vocTrainer.MaxStage;i++){
+      vocTrainer.Stages[i] = new Array();
     }
   },
   parseData : function(){
     // get title and desc from csv data
-    data = this.Data;
+    data = vocTrainer.Data;
     overridefromdataid = null;
     for(i = 0;i < data[0].length;i++){
       label = data[0][i];
@@ -71,8 +71,8 @@ var vocTrainer = {
         overridefromdataid = i+1;
       }
 
-      this.Labels[i] = label;
-      this.LabelTypes[i] = data[1][i];
+      vocTrainer.Labels[i] = label;
+      vocTrainer.LabelTypes[i] = data[1][i];
 
       $("#questioncolumnswitcher").append('<label class="btn btn-sm btn-default"><input type="radio" name="questioncolumn" value="c'+i+'">'+label+'</label>');
     }
@@ -80,7 +80,7 @@ var vocTrainer = {
       $("#questioncolumnswitcher").find("label").eq(0).removeClass("active").find("input").prop("checked",false);
       $("#questioncolumnswitcher").find("label").eq(overridefromdataid).addClass("active").find("input").prop("checked",true);
     }
-    else if(this.Labels.length > 2){
+    else if(vocTrainer.Labels.length > 2){
       $("#questioncolumnswitcher").find("label").eq(0).removeClass("active").find("input").prop("checked",false);
       $("#questioncolumnswitcher").find("label").eq(1).addClass("active").find("input").prop("checked",true);
     }
@@ -95,12 +95,12 @@ var vocTrainer = {
     for(i = 0;i < data.length;i++){
       stage[i] = i;
     }
-    this.Stages[0] = stage;
+    vocTrainer.Stages[0] = stage;
 
-    this.Data = data;
+    vocTrainer.Data = data;
 
-    this.initStats();
-    this.ask();
+    vocTrainer.initStats();
+    vocTrainer.ask();
   },
   initStats : function(){
     height = 15;
@@ -108,39 +108,39 @@ var vocTrainer = {
     chartbg = Raphael("statschart");
     chartpieces = new Array();
     fillcolors = ["f00","f60","ff0","6f0","0f0"];
-    for(i = 0;i < fillcolors.length-this.MaxStage;i++){
+    for(i = 0;i < fillcolors.length-vocTrainer.MaxStage;i++){
       fillcolors.splice(Math.floor(fillcolors.length/2-1),1);
     }
-    for(i = 0;i < this.MaxStage;i++){
+    for(i = 0;i < vocTrainer.MaxStage;i++){
       chartpieces[i] = chartbg.rect(0,0,0,height).attr({fill:"#"+fillcolors[i],stroke:"none",opacity:0.7});
     }
-    this.ChartBG = chartbg;
-    this.ChartPieces = chartpieces;
-    this.updateStats();
+    vocTrainer.ChartBG = chartbg;
+    vocTrainer.ChartPieces = chartpieces;
+    vocTrainer.updateStats();
   },
   updateStats : function(){
-    stages = this.Stages;
+    stages = vocTrainer.Stages;
     $("#stats").html("Stats:");
     marginleft = 0;
     outerwidth = $("#statschart").outerWidth();
     totalleft = 0;
-    for(i = 0;i < this.MaxStage;i++){
+    for(i = 0;i < vocTrainer.MaxStage;i++){
       $("#stats").append(" "+stages[i].length);
-      width = (outerwidth-3*this.MaxStage)/this.Data.length*stages[i].length+3;
-      this.ChartPieces[i].attr({width:width,x:marginleft});
+      width = (outerwidth-3*vocTrainer.MaxStage)/vocTrainer.Data.length*stages[i].length+3;
+      vocTrainer.ChartPieces[i].attr({width:width,x:marginleft});
       marginleft = marginleft + width;
-      totalleft += stages[i].length * (this.MaxStage - i - 1);
+      totalleft += stages[i].length * (vocTrainer.MaxStage - i - 1);
     }
-    scorevalue = Math.floor((100 * (this.MaxStage - 1) * this.Data.length) / (score.AnswerCount + totalleft));
+    scorevalue = Math.floor((100 * (vocTrainer.MaxStage - 1) * vocTrainer.Data.length) / (score.AnswerCount + totalleft));
     $("#stats").append(" ("+totalleft+" left; score: "+scorevalue+"%)")
 
-    this.AmountOfQuestionsLeft = this.Data.length - stages[this.MaxStage - 1].length;
+    vocTrainer.AmountOfQuestionsLeft = vocTrainer.Data.length - stages[vocTrainer.MaxStage - 1].length;
   },
   finishedCheck : function(){
-    if(this.AmountOfQuestionsLeft == 0){
+    if(vocTrainer.AmountOfQuestionsLeft == 0){
       score.saveScore();
 
-      view.loadScoreReport(this.File);
+      view.loadScoreReport(vocTrainer.File);
 
       view.switchUI("finished");
       return true;
@@ -148,82 +148,82 @@ var vocTrainer = {
     return false;
   },
   ask : function(){
-    if(this.finishedCheck()){
+    if(vocTrainer.finishedCheck()){
       return;
     }
 
-    if(this.BlockNextQuestion){
-      this.BlockNextQuestion = false;
+    if(vocTrainer.BlockNextQuestion){
+      vocTrainer.BlockNextQuestion = false;
       return;
     }
 
-    this.Answered = this.Labels.length - 1;
+    vocTrainer.Answered = vocTrainer.Labels.length - 1;
     answeredArray = new Array();
-    for(i = 0;i < this.Labels.length;i++){
+    for(i = 0;i < vocTrainer.Labels.length;i++){
       answeredArray.push(false);
     }
-    this.AnsweredArray = answeredArray;
+    vocTrainer.AnsweredArray = answeredArray;
 
-    data = this.Data;
+    data = vocTrainer.Data;
 
     // get random questionindex of the first MaxStage - 1 stages
     // ein gehacke ist das...
     // get nr of questions not in MaxStage => the number of not yet memorized questions
-    notmemorizedamount = this.AmountOfQuestionsLeft;
+    notmemorizedamount = vocTrainer.AmountOfQuestionsLeft;
     // get random index of the notmemorized
     questionstageindex = Math.floor(Math.random() * notmemorizedamount);
     // calculate questionstage and questionstageindex from notmemorizedindex
-    for(i = 0;i < this.MaxStage;i++){
-      if(questionstageindex >= this.Stages[i].length){
-        questionstageindex = questionstageindex - this.Stages[i].length;
+    for(i = 0;i < vocTrainer.MaxStage;i++){
+      if(questionstageindex >= vocTrainer.Stages[i].length){
+        questionstageindex = questionstageindex - vocTrainer.Stages[i].length;
         continue;
       }
       questionstage = i;
       break;
     }
 
-    this.QuestionStage = questionstage;
-    this.QuestionStageIndex = questionstageindex;
+    vocTrainer.QuestionStage = questionstage;
+    vocTrainer.QuestionStageIndex = questionstageindex;
 
-    questionindex = this.Stages[questionstage][questionstageindex];  // which 'word'
-    this.QuestionIndex = questionindex;
+    questionindex = vocTrainer.Stages[questionstage][questionstageindex];  // which 'word'
+    vocTrainer.QuestionIndex = questionindex;
 
     // update error report question nr
     $("#errorreport").html(questionindex+3);
 
     questioncolumn = $('input[name="questioncolumn"]:checked').val();
     // random if both, else what selected (which 'language')
-    questionlabel = Math.floor(Math.random()*this.Labels.length);
-    for(i = 0;i < this.Labels.length;i++){
+    questionlabel = Math.floor(Math.random()*vocTrainer.Labels.length);
+    for(i = 0;i < vocTrainer.Labels.length;i++){
       if(questioncolumn == "c"+i){
         questionlabel = i;
       }
     }
-    this.QuestionLabel = questionlabel;
+    vocTrainer.QuestionLabel = questionlabel;
 
     $("#typespot").html("");
     answerlabel = false;
-    for(i = 0;i < this.Labels.length;i++){
+    for(i = 0;i < vocTrainer.Labels.length;i++){
       if(i != questionlabel){
-        $("#typespot").append('<input type="text" class="form-control list-group-item" id="typespot'+i+'" placeholder="'+this.Labels[i]+'">');
+        $("#typespot").append('<input type="text" class="form-control list-group-item" id="typespot'+i+'" placeholder="'+vocTrainer.Labels[i]+'">');
         if(answerlabel == false){
           answerlabel = i;
         }
       }
     }
-    this.AnswerLabel = answerlabel;
-    this.Question = data[questionindex][questionlabel];
-    this.Answer = data[questionindex][answerlabel];
+    vocTrainer.AnswerLabel = answerlabel;
+    vocTrainer.Question = data[questionindex][questionlabel];
+    vocTrainer.Answer = data[questionindex][answerlabel];
 
-    if(this.Labels.length <= 2){
+    if(vocTrainer.Labels.length <= 2){
       // generate optionlist (the clickable select options)
       optionspool = data.slice();   // slice to copy the array
       optionspool.splice(questionindex,1);
       shuffle(optionspool);
       options = new Array();
       // add real answer to options
-      options.push(this.Data[questionindex][answerlabel]);
-      for(i = 0;i < Math.min(this.MaxSuggestions-1,optionspool.length);i++){
+      options.push(vocTrainer.Data[questionindex][answerlabel]);
+      for(i = 0;i < Math.min(vocTrainer.MaxSuggestions-1,optionspool.length);i++){
         options.push(optionspool[i][answerlabel]);
       }
       shuffle(options);
@@ -237,38 +237,38 @@ var vocTrainer = {
       });
     }
 
-    $("#askedline").html("<small>"+this.Labels[questionlabel]+"</small> "+this.Question);
+    $("#askedline").html("<small>"+vocTrainer.Labels[questionlabel]+"</small> "+vocTrainer.Question);
   },
   answerViaOption : function(optionnr){
-    if(this.Answered > 0 && !$("#answeroptions a").eq(optionnr).hasClass("alert-danger")){
-      if(optionnr != this.AnswerOption){   // FALSE A
+    if(vocTrainer.Answered > 0 && !$("#answeroptions a").eq(optionnr).hasClass("alert-danger")){
+      if(optionnr != vocTrainer.AnswerOption){   // FALSE A
         $("#answeroptions a").eq(optionnr).addClass("alert-danger");
         $("#answeroptions a").eq(optionnr).css({"pointer-events":"none"});
-        this.BlockNextQuestion = true;
-        this.dontKnow();
+        vocTrainer.BlockNextQuestion = true;
+        vocTrainer.dontKnow();
       }
       else{   // CORRECT ANSWER
         $("#answeroptions a").eq(optionnr).addClass("alert-success");
         $("#answeroptions a").css({"pointer-events":"none"});
-        this.Answered = 0;
-        this.BlockNextQuestion = false;
-        this.answerCorrect();
+        vocTrainer.Answered = 0;
+        vocTrainer.BlockNextQuestion = false;
+        vocTrainer.answerCorrect();
       }
-      $("#typespot"+this.AnswerLabel).attr("placeholder",this.Labels[this.AnswerLabel]+" "+this.Answer);
+      $("#typespot"+vocTrainer.AnswerLabel).attr("placeholder",vocTrainer.Labels[vocTrainer.AnswerLabel]+" "+vocTrainer.Answer);
     }
   },
   answer : function(answernr,answer){
-    if(this.Answered > 0 && this.AnsweredArray[answernr] == false){
-      if(answer != this.Answer){ // FALSE A
-        this.BlockNextQuestion = true;
+    if(vocTrainer.Answered > 0 && vocTrainer.AnsweredArray[answernr] == false){
+      if(answer != vocTrainer.Answer){ // FALSE A
+        vocTrainer.BlockNextQuestion = true;
       }
       else{ // CORRECT ANSWER
-        $("#typespot"+answernr).attr("placeholder",this.Labels[answernr]+" "+this.Answer);
-        this.Answered = this.Answered - 1;
-        this.AnsweredArray[answernr] = true;
-        if(this.Answered == 0){
-          this.BlockNextQuestion = false;
-          this.answerCorrect();
+        $("#typespot"+answernr).attr("placeholder",vocTrainer.Labels[answernr]+" "+vocTrainer.Answer);
+        vocTrainer.Answered = vocTrainer.Answered - 1;
+        vocTrainer.AnsweredArray[answernr] = true;
+        if(vocTrainer.Answered == 0){
+          vocTrainer.BlockNextQuestion = false;
+          vocTrainer.answerCorrect();
         }
       }
     }
@@ -276,71 +276,71 @@ var vocTrainer = {
   answerCorrect : function(){
     score.AnswerCount++;
     // cut question from current stage
-    this.Stages[this.QuestionStage].splice(this.QuestionStageIndex,1);
+    vocTrainer.Stages[vocTrainer.QuestionStage].splice(vocTrainer.QuestionStageIndex,1);
     // add question to higher stage -> don't ask from highest stage
-    this.QuestionStage = this.QuestionStage+1;
-    this.QuestionStageIndex = this.Stages[this.QuestionStage].length;
-    this.Stages[this.QuestionStage].push(this.QuestionIndex);
-    this.updateStats();
+    vocTrainer.QuestionStage = vocTrainer.QuestionStage+1;
+    vocTrainer.QuestionStageIndex = vocTrainer.Stages[vocTrainer.QuestionStage].length;
+    vocTrainer.Stages[vocTrainer.QuestionStage].push(vocTrainer.QuestionIndex);
+    vocTrainer.updateStats();
   },
   answerInCorrect : function(){
     score.AnswerCount++;
     // cut question from current stage
-    this.Stages[this.QuestionStage].splice(this.QuestionStageIndex,1);
+    vocTrainer.Stages[vocTrainer.QuestionStage].splice(vocTrainer.QuestionStageIndex,1);
     // add question to lowest stage
-    this.QuestionStage = 0;
-    this.QuestionStageIndex = this.Stages[this.QuestionStage].length;
-    this.Stages[this.QuestionStage].push(this.QuestionIndex);
-    this.updateStats();
+    vocTrainer.QuestionStage = 0;
+    vocTrainer.QuestionStageIndex = vocTrainer.Stages[vocTrainer.QuestionStage].length;
+    vocTrainer.Stages[vocTrainer.QuestionStage].push(vocTrainer.QuestionIndex);
+    vocTrainer.updateStats();
   },
   knowThat : function(){ // if clicked before any other action => last stage else => next stage
-    if(this.Answered == this.Labels.length - 1){
-      score.AnswerCount = score.AnswerCount + this.MaxStage - 1 - this.QuestionStage;
+    if(vocTrainer.Answered == vocTrainer.Labels.length - 1){
+      score.AnswerCount = score.AnswerCount + vocTrainer.MaxStage - 1 - vocTrainer.QuestionStage;
       // cut question from current stage
-      this.Stages[this.QuestionStage].splice(this.QuestionStageIndex,1);
+      vocTrainer.Stages[vocTrainer.QuestionStage].splice(vocTrainer.QuestionStageIndex,1);
       // add question to higher stage -> don't ask from highest stage
-      this.QuestionStage = this.MaxStage-1;
-      this.QuestionStageIndex = this.Stages[this.QuestionStage].length;
-      this.Stages[this.QuestionStage].push(this.QuestionIndex);
-      this.updateStats();
+      vocTrainer.QuestionStage = vocTrainer.MaxStage-1;
+      vocTrainer.QuestionStageIndex = vocTrainer.Stages[vocTrainer.QuestionStage].length;
+      vocTrainer.Stages[vocTrainer.QuestionStage].push(vocTrainer.QuestionIndex);
+      vocTrainer.updateStats();
     }
     else{
-      this.answerCorrect();
+      vocTrainer.answerCorrect();
     }
 
-    this.BlockNextQuestion = false;
-    this.ask();
+    vocTrainer.BlockNextQuestion = false;
+    vocTrainer.ask();
   },
   dontKnow : function(){
-    answerlabel = this.AnswerLabel;
-    for(i = 0;i < this.Labels.length;i++){
-      answerlabel = (this.AnswerLabel+i) % this.Labels.length;
-      if(answerlabel == this.QuestionLabel){
+    answerlabel = vocTrainer.AnswerLabel;
+    for(i = 0;i < vocTrainer.Labels.length;i++){
+      answerlabel = (vocTrainer.AnswerLabel+i) % vocTrainer.Labels.length;
+      if(answerlabel == vocTrainer.QuestionLabel){
         continue;
       }
-      if(this.AnsweredArray[answerlabel] == false){
+      if(vocTrainer.AnsweredArray[answerlabel] == false){
         break;
       }
     }
-    if(this.AnsweredArray[answerlabel] == false){
-      if(this.Labels.length <= 2){
-        $("#answeroptions a").eq(this.AnswerOption).addClass("alert-warning");
+    if(vocTrainer.AnsweredArray[answerlabel] == false){
+      if(vocTrainer.Labels.length <= 2){
+        $("#answeroptions a").eq(vocTrainer.AnswerOption).addClass("alert-warning");
 
       }
       else{
         $("#typespot"+answerlabel).val("");
         $("#typespot"+answerlabel).addClass("alert-warning");
       }
-      $("#typespot"+answerlabel).attr("placeholder",this.Labels[answerlabel]+" "+this.Answer);
-      this.AnsweredArray[answerlabel] = true;
-      this.Answered = this.Answered - 1;
-      this.answerInCorrect();
-      this.BlockNextQuestion = false;
+      $("#typespot"+answerlabel).attr("placeholder",vocTrainer.Labels[answerlabel]+" "+vocTrainer.Answer);
+      vocTrainer.AnsweredArray[answerlabel] = true;
+      vocTrainer.Answered = vocTrainer.Answered - 1;
+      vocTrainer.answerInCorrect();
+      vocTrainer.BlockNextQuestion = false;
       $("#typespot"+answerlabel).focus();
     }
   },
   checkTypespot : function(typespot){
-    answernr = this.AnswerLabel;
+    answernr = vocTrainer.AnswerLabel;
 
     replacepattern = new Array();
     replacecontent = new Array();
@@ -350,7 +350,7 @@ var vocTrainer = {
     replacecontent.push(" ");
     replacepattern.push(/(\[[^\[\]]*)*(\s*\[[^\[\]]*\]\s*)+([^\[\]]*\])*/g);  // nested brackets [asdcad[acd]sc]
     replacecontent.push(" ");
-    labelreplace = this.Labels[answernr];
+    labelreplace = vocTrainer.Labels[answernr];
     for(i = 0;i < replacepattern.length;i++){
       labelreplace = labelreplace.replace(replacepattern[i],replacecontent[i]);
     }
@@ -358,7 +358,7 @@ var vocTrainer = {
     labelreplace = labelreplace.replace(/\' /g,"\'");
     replacepattern.push(RegExp("((^|\/|\s)("+labelreplace+"))*","g")); // todo z.b. für il/elle/on soll auch "elle on" möglich sein
     replacecontent.push("");
-    switch (this.LabelTypes[answernr]) {
+    switch (vocTrainer.LabelTypes[answernr]) {
       case "en":
         // English
         replacepattern.push(/(((^|\s|\/)((an|a)(\s|\/))+)+)/g); // ^a /a  a ^an /an  an ^an/a /an/a ...
@@ -385,7 +385,7 @@ var vocTrainer = {
       default:
     }
 
-    answer = this.Answer.toLowerCase()+" ";
+    answer = vocTrainer.Answer.toLowerCase()+" ";
     typespot = typespot.toLowerCase()+" ";
 
     for(i = 0;i < replacepattern.length;i++){
@@ -402,11 +402,11 @@ var vocTrainer = {
     typespotlist = typespot.split(splitpattern);
 
     if($(answerlist).not(typespotlist).length === 0 && $(typespotlist).not(answerlist).length === 0){ // check if arrays match in any order
-      if(this.Labels.length <= 2){
-        this.answerViaOption(this.AnswerOption);
+      if(vocTrainer.Labels.length <= 2){
+        vocTrainer.answerViaOption(vocTrainer.AnswerOption);
       }
       else{
-        this.answer(answernr,this.Answer);
+        vocTrainer.answer(answernr,vocTrainer.Answer);
       }
       return true;
     }
