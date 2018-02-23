@@ -6,6 +6,10 @@ Questions can be answered by clicking on random suggestions including the correc
 
 ![screenshot from 2018-02-22 18-55-39](https://user-images.githubusercontent.com/2730611/36555380-1bb76514-1802-11e8-8a96-2f83ef3defa1.png)
 
+## Demo Servers
+
+[server1](https://www.philippharb.at/VocTrainer)
+
 ## Data Structure
 
 Data can be added via .txt files complying the following format:
