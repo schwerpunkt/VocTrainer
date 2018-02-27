@@ -1,3 +1,9 @@
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http.get("data/list.json", {headers: { 'Accept': 'text/plain' }})
+  .then(function (response) {$scope.data = response.data;});
+});
+
 var view = {
   switchUI : function(ui){
     $(".vocUIelement").hide();
