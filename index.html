@@ -19,6 +19,10 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <!-- needs to be loaded before the body to prevent displaying of angular templates -->
+  <script src="voctrainer/external/angular.min.js"></script>
+
 </head>
 <body role="document">
       <!-- Navbar -->
@@ -45,56 +49,12 @@
       </nav>
 
     <!-- Trainerselector -->
-    <div id="trainerselector" class="vocUIelement container theme-showcase" role="main">
-      <h1>Hrvatski</h1>
-      <div class="list-group">
-        <a href="index.html?hr/VocData_ENHR_zivotinje">VocData_ENHR_zivotinje</a>
-        <a href="index.html?hr/VocData_ENHR_mjeseci_radni_dani_godisnja_doba">VocData_ENHR_mjeseci_radni_dani_godisnja_doba</a>
-        <a href="index.html?hr/VocData_ENHR_vrijeme1">VocData_ENHR_vrijeme1</a>
-        <a href="index.html?hr/VocData_ENHR_vrijeme2">VocData_ENHR_vrijeme2</a>
-        <a href="index.html?hr/VocData_ENHR_odjeca">VocData_ENHR_odjeca</a>
-        <a href="index.html?hr/VocData_ENHR_boje">VocData_ENHR_boje</a>
-        <a href="index.html?hr/VocData_ENHR_adjectives1">VocData_ENHR_adjectives1</a>
-        <a href="index.html?hr/VocData_ENHR_adjectives2">VocData_ENHR_adjectives2</a>
-        <a href="index.html?hr/VocData_ENHR_adjectives3">VocData_ENHR_adjectives3</a>
-        <a href="index.html?hr/VocData_ENHR_adjectives4">VocData_ENHR_adjectives4</a>
-        <a href="index.html?hr/VocData_HR_pridjevni_antonmi">VocData_HR_pridjevni_antonmi</a>
-        <a href="index.html?hr/VbData_ENHR_glagoli1">VbData_ENHR_glagoli1</a>
-      </div>
-      <h1>Français</h1>
-      <div class="list-group">
-        <a href="index.html?fr/VocData_DEFR_decouvertes2_au_debut">VocData_DEFR_decouvertes2_au_debut</a>
-        <a href="index.html?fr/VbData_DEFR_decouvertes_verbes1">VbData_DEFR_decouvertes_verbes1</a>
-        <a href="index.html?fr/VbData_DEFR_decouvertes_verbes2">VbData_DEFR_decouvertes_verbes2</a>
-        <a href="index.html?fr/VbData_DEFR_decouvertes_verbes3">VbData_DEFR_decouvertes_verbes3</a>
-        <a href="index.html?fr/VbData_DEFR_decouvertes_verbes4">VbData_DEFR_decouvertes_verbes4</a>
-      </div>
-      <h1>Italiano</h1>
-      <div class="list-group">
-        <a href="index.html?it/VbData_DEIT_verbi">VbData_DEIT_verbi</a>
-        <a href="index.html?it/VocData_ENIT_colori">VocData_ENIT_colori</a>
-      </div>
-      <h1>English</h1>
-      <div class="list-group">
-        <a href="index.html?en/VocData_EN_collective_nouns">VocData_EN_collective_nouns</a>
-        <a href="index.html?en/VocData_EN_climbing">VocData_EN_climbing</a>
-      </div>
-      <h1>AOEII</h1>
-      <div class="list-group">
-        <a href="index.html?aoeii/VocData_AOEII_counterlist">VocData_AOEII_counterlist</a>
-      </div>
-      <h1>Hiragana</h1>
-      <div class="list-group">
-        <a href="index.html?hiragana/hiragana">hiragana</a>
-        <a href="index.html?hiragana/hiragana_a_o">hiragana_a_o</a>
-        <a href="index.html?hiragana/hiragana_a_ko">hiragana_a_ko</a>
-        <a href="index.html?hiragana/hiragana_a_so">hiragana_a_so</a>
-        <a href="index.html?hiragana/hiragana_a_to">hiragana_a_to</a>
-        <a href="index.html?hiragana/hiragana_a_no">hiragana_a_no</a>
-        <a href="index.html?hiragana/hiragana_a_ho">hiragana_a_ho</a>
-        <a href="index.html?hiragana/hiragana_a_mo">hiragana_a_mo</a>
-        <a href="index.html?hiragana/hiragana_a_yo">hiragana_a_yo</a>
-        <a href="index.html?hiragana/hiragana_a_ro">hiragana_a_ro</a>
+    <div id="trainerselector" class="vocUIelement container theme-showcase" role="main" ng-app="myApp" ng-controller="myCtrl" ng-cloak>
+      <div ng-repeat="category in data">
+        <h1>{{category.name}}</h1>
+        <div class="list-group">
+          <a ng-repeat="trainer in category.trainers" ng-href="?{{trainer.file}}">{{trainer.name || trainer.file}}</a>
+        </div>
       </div>
     </div>
 

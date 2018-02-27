@@ -1,0 +1,160 @@
+[
+{
+	"name": "Hrvatski",
+	"trainers": [
+		{
+			"name": "VocData_ENHR_zivotinje",
+			"file": "hr/VocData_ENHR_zivotinje"
+		},
+		{
+			"name": "VocData_ENHR_mjeseci_radni_dani_godisnja_doba",
+			"file": "hr/VocData_ENHR_mjeseci_radni_dani_godisnja_doba"
+		},
+		{
+			"name": "VocData_ENHR_vrijeme1",
+			"file": "hr/VocData_ENHR_vrijeme1"
+		},
+		{
+			"name": "VocData_ENHR_vrijeme2",
+			"file": "hr/VocData_ENHR_vrijeme2"
+		},
+		{
+			"name": "VocData_ENHR_odjeca",
+			"file": "hr/VocData_ENHR_odjeca"
+		},
+		{
+			"name": "VocData_ENHR_boje",
+			"file": "hr/VocData_ENHR_boje"
+		},
+		{
+			"name": "VocData_ENHR_adjectives1",
+			"file": "hr/VocData_ENHR_adjectives1"
+		},
+		{
+			"name": "VocData_ENHR_adjectives2",
+			"file": "hr/VocData_ENHR_adjectives2"
+		},
+		{
+			"name": "VocData_ENHR_adjectives3",
+			"file": "hr/VocData_ENHR_adjectives3"
+		},
+		{
+			"name": "VocData_ENHR_adjectives4",
+			"file": "hr/VocData_ENHR_adjectives4"
+		},
+		{
+			"name": "VocData_HR_pridjevni_antonmi",
+			"file": "hr/VocData_HR_pridjevni_antonmi"
+		},
+		{
+			"name": "VbData_ENHR_glagoli1",
+			"file": "hr/VbData_ENHR_glagoli1"
+		}
+	]
+},
+{
+	"name": "Français",
+	"trainers": [
+		{
+			"name": "VocData_DEFR_decouvertes2_au_debut",
+			"file": "fr/VocData_DEFR_decouvertes2_au_debut"
+		},
+		{
+			"name": "VbData_DEFR_decouvertes_verbes1",
+			"file": "fr/VbData_DEFR_decouvertes_verbes1"
+		},
+		{
+			"name": "VbData_DEFR_decouvertes_verbes2",
+			"file": "fr/VbData_DEFR_decouvertes_verbes2"
+		},
+		{
+			"name": "VbData_DEFR_decouvertes_verbes3",
+			"file": "fr/VbData_DEFR_decouvertes_verbes3"
+		},
+		{
+			"name": "VbData_DEFR_decouvertes_verbes4",
+			"file": "fr/VbData_DEFR_decouvertes_verbes4"
+		}
+	]
+},
+{
+	"name": "Italiano",
+	"trainers": [
+		{
+			"name": "VbData_DEIT_verbi",
+			"file": "it/VbData_DEIT_verbi"
+		},
+		{
+			"name": "VocData_ENIT_colori",
+			"file": "it/VocData_ENIT_colori"
+		}
+	]
+},
+{
+	"name": "English",
+	"trainers": [
+		{
+			"name": "VocData_EN_collective_nouns",
+			"file": "en/VocData_EN_collective_nouns"
+		},
+		{
+			"name": "VocData_EN_climbing",
+			"file": "en/VocData_EN_climbing"
+		}
+	]
+},
+{
+	"name": "AOEII",
+	"trainers": [
+		{
+			"name": "VocData_AOEII_counterlist",
+			"file": "aoeii/VocData_AOEII_counterlist"
+		}
+	]
+},
+{
+	"name": "Hiragana",
+	"trainers": [
+		{
+			"name": "hiragana",
+			"file": "hiragana/hiragana"
+		},
+		{
+			"name": "hiragana_a_o",
+			"file": "hiragana/hiragana_a_o"
+		},
+		{
+			"name": "hiragana_a_ko",
+			"file": "hiragana/hiragana_a_ko"
+		},
+		{
+			"name": "hiragana_a_so",
+			"file": "hiragana/hiragana_a_so"
+		},
+		{
+			"name": "hiragana_a_to",
+			"file": "hiragana/hiragana_a_to"
+		},
+		{
+			"name": "hiragana_a_no",
+			"file": "hiragana/hiragana_a_no"
+		},
+		{
+			"name": "hiragana_a_ho",
+			"file": "hiragana/hiragana_a_ho"
+		},
+		{
+			"name": "hiragana_a_mo",
+			"file": "hiragana/hiragana_a_mo"
+		},
+		{
+			"name": "hiragana_a_yo",
+			"file": "hiragana/hiragana_a_yo"
+		},
+		{
+			"name": "hiragana_a_ro",
+			"file": "hiragana/hiragana_a_ro"
+		}
+	]
+}
+]
