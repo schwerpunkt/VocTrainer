@@ -113,47 +113,23 @@
 	]
 },
 {
-	"name": "Hiragana",
+	"name": "Japanese",
 	"trainers": [
 		{
-			"name": "hiragana",
-			"file": "hiragana/hiragana"
+			"name": "Hiragana Monographs",
+			"file": "jp/hiragana-monographs"
 		},
 		{
-			"name": "hiragana_a_o",
-			"file": "hiragana/hiragana_a_o"
+			"file": "jp/hiragana-diacritics"
 		},
 		{
-			"name": "hiragana_a_ko",
-			"file": "hiragana/hiragana_a_ko"
+			"file": "jp/hiragana-digraphs"
 		},
 		{
-			"name": "hiragana_a_so",
-			"file": "hiragana/hiragana_a_so"
+			"file": "jp/voc__1__en_kanji__hiragana"
 		},
 		{
-			"name": "hiragana_a_to",
-			"file": "hiragana/hiragana_a_to"
-		},
-		{
-			"name": "hiragana_a_no",
-			"file": "hiragana/hiragana_a_no"
-		},
-		{
-			"name": "hiragana_a_ho",
-			"file": "hiragana/hiragana_a_ho"
-		},
-		{
-			"name": "hiragana_a_mo",
-			"file": "hiragana/hiragana_a_mo"
-		},
-		{
-			"name": "hiragana_a_yo",
-			"file": "hiragana/hiragana_a_yo"
-		},
-		{
-			"name": "hiragana_a_ro",
-			"file": "hiragana/hiragana_a_ro"
+			"file": "jp/voc__1__en_kanji__hiragana_romaji"
 		}
 	]
 }

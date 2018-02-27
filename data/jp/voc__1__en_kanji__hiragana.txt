@@ -1,0 +1,25 @@
+-English(Kanji):,Hiragana
+en_kanji,hiragana
+I (formal for males / normal for females) 私,わたし
+I (normal for males) 僕,ぼく
+he 彼,かれ
+she 彼女,かのじょ
+person 人,ひと
+dog 犬,いぬ
+cat 猫,ねこ
+house 家,いえ
+you (singular/normal),あなた
+this (noun),これ
+here,ここ
+this (descriptive),この
+that (noun),それ
+there,そこ
+that (descriptive),その
+Thank you (normal),ありがとう
+Thank you (formal),ありがとう ございます
+You're welcome (normal),どういたしまして
+Good morning (informal),おはよう
+Good morning,おはようございます
+Hello (normal),こんにちは
+Good evening (normal),こんばんは
+Goodbye (normal),さよなら
