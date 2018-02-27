@@ -1,4 +1,4 @@
--Hiragana,Romaji
+Hiragana,Romaji
 hiragana,romaji
 あ,a
 い,i
@@ -25,3 +25,24 @@ hiragana,romaji
 ぬ,nu
 ね,ne
 の,no
+は,ha
+ひ,hi
+ふ,fu (ɸɯ)
+へ,he
+ほ,ho
+ま,ma
+み,mi
+む,mu
+め,me
+も,mo
+や,ya
+ゆ,yu
+よ,yo
+ら,ra
+り,ri
+る,ru
+れ,re
+ろ,ro
+わ,wa
+を,wo
+ん,n
