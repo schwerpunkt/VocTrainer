@@ -217,15 +217,10 @@ var vocTrainer = {
 
     if(vocTrainer.Labels.length <= 2){
       // generate optionlist (the clickable select options)
-      optionspool = data.slice();   // slice to copy the array
-      optionspool.splice(questionindex,1);
-      shuffle(optionspool);
-      options = new Array();
-      // add real answer to options
-      options.push(vocTrainer.Data[questionindex][answerlabel]);
-      for(i = 0;i < Math.min(vocTrainer.MaxSuggestions-1,optionspool.length);i++){
-        options.push(optionspool[i][answerlabel]);
-      }
+      options=data.map(i => i[1]) // take only the answers
+        .filter(i => i !== vocTrainer.Answer) // filter out correct answer(s)
+        .splice(0, vocTrainer.MaxSuggestions - 1) //take only a few
+        .concat([vocTrainer.Answer]); // add the correct answer
       shuffle(options);
 
       $("#answeroptions").html("");
